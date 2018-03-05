@@ -122,6 +122,10 @@
             "check-separator",
             "check-type",
             "check-typecast"
-        ]
+        ],
+        "object-curly-spacing": [
+            true,
+            "always"
+          ]
     }
 }
