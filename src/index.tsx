@@ -6,13 +6,14 @@ import { Provider } from 'react-redux';
 import { Route } from 'react-router';
 
 import { store, history } from './core';
+import { Game } from './pages';
 
-const app = (
+const app = () => (
   <Provider store={store}>
-    <ConnectedRouter history={history}>
+     <ConnectedRouter history={history}>
       <Route exact={true} path="/" component={Game}/>
     </ConnectedRouter>
   </Provider>
 );
 
-ReactDOM.render(app, document.getElementById('app'));
+ReactDOM.render(app(), document.getElementById('app'));

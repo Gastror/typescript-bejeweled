@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
+    "@types/history": "^4.6.2",
     "@types/react": "^16.0.0",
     "@types/react-dom": "^16.0.0",
     "@types/react-hot-loader": "^3.0.4",
-    "@types/history": "^4.6.2",
     "@types/react-redux": "^5.0.15",
     "@types/react-router": "^4.0.22",
     "@types/react-router-redux": "^5.0.12",
@@ -20,15 +20,16 @@
     "tslint-react": "^3.2.0",
     "typescript": "^2.5.3",
     "webpack": "^4.1.0",
+    "webpack-cli": "^2.0.10",
     "webpack-dev-server": "^3.0.0",
-    "webpack-cli": "^2.0.10"
+    "why-did-you-update": "^0.1.1"
   },
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
-    "react-router-redux": "^4.0.8",
+    "react-router-redux": "^5.0.0",
     "redux": "^3.7.2"
   },
   "scripts": {
