@@ -39,7 +39,7 @@
     "redux": "^3.7.2"
   },
   "scripts": {
-    "reinstall": "rm -rf node_modules && yarn",
+    "reinstall": "rimraf node_modules && yarn",
     "start": "webpack-dev-server --mode development",
     "prebuild": "rimraf dist",
     "build": "cross-env webpack --mode production --config webpack.config.production.js",
