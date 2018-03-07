@@ -1,7 +1,9 @@
 {
-  "name": "react-typescript",
+  "name": "typescript-starterkit",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "Berry van Mondfrans",
+  "license": "MIT",
   "devDependencies": {
     "@types/history": "^4.6.2",
     "@types/react": "^16.0.0",
@@ -42,7 +44,5 @@
     "prebuild": "rimraf dist",
     "build": "cross-env webpack --mode production --config webpack.config.production.js",
     "postbuild": "copyfiles index.html dist"
-  },
-  "author": "Berry van Mondfrans",
-  "license": "MIT"
+  }
 }
