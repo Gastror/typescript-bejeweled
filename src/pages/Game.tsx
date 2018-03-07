@@ -1,8 +1,7 @@
 import * as React from 'react';
 import Base from './Base';
 
-export interface IGameProps {
-}
+export interface IGameProps {}
 
 export default class Game extends React.Component<IGameProps, any> {
   render() {

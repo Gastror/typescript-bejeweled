@@ -5,8 +5,16 @@ import { ConnectedRouter } from 'react-router-redux';
 import { Provider } from 'react-redux';
 import { Route } from 'react-router';
 
-import { store, history } from './core';
+import { store, history, initializeStyle, BaseConstants } from './core';
 import { Game } from './pages';
+import {  } from './core/constants';
+
+if (process.env.NODE_ENV !== 'production') {
+  const { whyDidYouUpdate } = require('why-did-you-update');
+  whyDidYouUpdate(React);
+}
+
+initializeStyle();
 
 const app = () => (
   <Provider store={store}>
@@ -16,4 +24,4 @@ const app = () => (
   </Provider>
 );
 
-ReactDOM.render(app(), document.getElementById('app'));
+ReactDOM.render(app(), document.querySelector(BaseConstants.containerSelector));
