@@ -3,9 +3,13 @@ import { px, url, color } from 'csx';
 export namespace BaseConstants {
   export const containerSelector =  '#approot';
 }
+export namespace GameConstants {
+  export const chipSize = 50;
+  export const fieldSize = 14;
+}
 
 export namespace StyleConstants {
-  export const appSize = px(700);
+  export const appSize = px(GameConstants.chipSize * GameConstants.fieldSize);
 
   export namespace Colours {
     export const BackgroundPrimary = color('#282a36');
