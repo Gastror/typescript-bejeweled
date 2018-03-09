@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Field from '../../components/field';
+import Field from '../../components/Field';
 
 import { Base } from '../';
 
